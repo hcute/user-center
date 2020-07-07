@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    hikari:
+      username: root
+      password: 123456
+      # com.mysql.cj.jdbc.Driver => 如果是6.x或者更高版本
+      # com.mysql.jdbc.Driver => 如果connect版本是5.x
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.111.239.37:3306/user_center
+  application:
+    # 服务名称尽量使用中划线，不要使用下划线和特殊字符
+    name: user-center
+  cloud:
+    nacos:
+      discovery:
+        # 指定namespace
+#        namespace: 0674b132-f85c-451f-b5b5-ed81b759294e
+        server-addr: localhost:8848
+        # 指定集群名称 NJ BJ HZ
+        cluster-name: NJ
+        metadata:
+          version: v1
+          target-version: v1
+
+server:
+  port: 8081
