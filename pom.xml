@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>link.hooray.alibaba</groupId>
-    <artifactId>content-center</artifactId>
+    <artifactId>user-center</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>content-center</name>
+    <name>user-center</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -58,6 +58,9 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
+
+
+
     </dependencies>
 
     <dependencyManagement>
